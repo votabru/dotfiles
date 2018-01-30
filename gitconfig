@@ -1,0 +1,73 @@
+# https://git-scm.com/docs/git-config
+
+[alias]
+  a = add
+  aa = add --all
+  ap = add --patch
+  b = branch
+  ba = branch --all
+  br = branch --remote
+  ca = commit --amend
+  ci = commit -v
+  cl = clone
+  co = checkout
+  com = checkout master
+  df = diff --word-diff --color-words
+  ds = diff --word-diff --cached --color-words
+  f = fetch
+  l = log --date=format:'%b %d, %Y' --pretty=format:'%C(yellow bold)%h%Creset%C(white)%d%Creset %s%n %C(blue)%aN (%cd)%n'
+  lg = log --graph --stat --pretty=format:'%C(yellow bold)%h%Creset%C(white)%d%Creset %s%n %C(blue)%aN (%cd)%n'
+  pl = pull
+  ps = push
+  psf = push --force-with-lease
+  pum = push -u origin master
+  recent = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+  rv = remote -v
+  s = status
+  tl = tag --list
+  uncommit = reset --soft HEAD^
+  unstage = reset
+  wch = whatchanged -p --abbrev-commit --pretty=medium -10
+
+[color]
+  ui = true
+
+[color "branch"]
+  current = white bold
+  local   = yellow
+  remote  = cyan
+
+[color "diff"]
+  frag = cyan bold
+  meta = white
+  new = green bold
+  old = red bold
+  commit = yellow bold
+  whitespace = red reverse
+
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+
+[color "status"]
+  untracked = cyan
+
+[commit]
+  template = ~/.gitmessage
+
+[core]
+  autocrlf     = input
+  excludesfile = ~/.gitignore_global
+  ignorecase   = false
+  safecrlf     = warn
+  abbrev = 7
+
+[include]
+  path = ~/.gitconfig.local
+
+[user]
+	email = wouter.roux@sap.com
+	name = Wouter Roux
+  editor = vi

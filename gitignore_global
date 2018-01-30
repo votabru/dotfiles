@@ -1,0 +1,14 @@
+.DS_Store
+.DS_Store?
+Thumbs.db
+*.swp
+*~
+.project
+tags
+log/
+.bundle
+.env
+tmp/
+config/local_env.yml
+Session.vim
+*.local
