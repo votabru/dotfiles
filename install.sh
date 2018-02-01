@@ -24,7 +24,6 @@ files=(
 "gitignore_global"
 "gitmessage"
 "hushlogin"
-"pryrc"
 "tmux.conf"
 "vimrc"
 "zshrc"
