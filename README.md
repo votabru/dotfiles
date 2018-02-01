@@ -20,8 +20,8 @@ The following software is expected to be pre-installed:
 
 
 ## Installation
-git clone https://github.com/votabru/dotfiles.git ~/dotfiles
-. ~/dotfiles/install.sh
+* git clone https://github.com/votabru/dotfiles.git ~/dotfiles
+* . ~/dotfiles/install.sh
 
 ## Post-install Tasks
 TBD
