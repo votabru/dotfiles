@@ -24,8 +24,6 @@ alias ff='find . -type f -name'
 # Jump to quick edits
 alias ea='$EDITOR ~/dotfiles/zsh/aliases'
 alias ed='$EDITOR ~/dotfiles'
-alias ef='$EDITOR ~/dotfiles/zsh/functions'
-alias ep='$EDITOR ~/dotfiles/zsh/prompt'
 alias et='$EDITOR ~/.tmux.conf'
 alias ev='$EDITOR ~/.vimrc'
 alias ez='$EDITOR ~/.zshrc'
